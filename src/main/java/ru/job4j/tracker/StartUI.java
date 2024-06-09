@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 public class StartUI {
 
-    /*
-    Метод init() - инициализирует приложение
-    и запускает выполнение различных пользовательских действий;
-     */
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = true;
         while (run) {
@@ -22,10 +18,6 @@ public class StartUI {
         }
     }
 
-    /*
-    Метод showMenu() - выводит на экран меню доступных
-    пользовательских действий;
-     */
     private void showMenu() {
         String[] menu = {
                 "Добавить новую заявку", "Показать все заявки", "Изменить заявку",
@@ -37,10 +29,6 @@ public class StartUI {
             System.out.println(i + ". " + menu[i]);
         }
     }
-
-    /*
-    main() просто запускает наше приложение.
-     */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
